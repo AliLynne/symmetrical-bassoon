@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // defines what 1 rem is
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: "Mukta", sans-serif;
+}
+
+.header {
+  height: 10vh;
+  background-color: hotpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+
+  &__heading > a {
+    text-decoration: none;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  &__nav-list-item {
+    margin: 1rem;
+  }
+
+  &__nav-list-item > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+.main {
+  height: 90vh;
+}
+
+.addTagEventForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+}

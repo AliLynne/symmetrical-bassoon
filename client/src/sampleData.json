@@ -1,0 +1,84 @@
+{
+  "events": [
+    {
+      "id": "68f5d425-5be5-4b2a-9c26-3fc3986390b6",
+      "dateTime": "1614719681",
+      "tags": [
+        {
+          "id": "19cce942-d33d-4ddc-a64d-691bd56b9548",
+          "title": "Back Pain"
+        },
+        {
+          "id": "9195b7f3-39ea-4519-a692-1981cc193cae",
+          "title": "Neck Pain"
+        }
+      ]
+    },
+    {
+      "id": "e9b043bf-7714-4c26-8be2-5bc4b64e01e0",
+      "dateTime": "1614633281",
+      "tags": [
+        {
+          "id": "19cce942-d33d-4ddc-a64d-691bd56b9548",
+          "title": "Back Pain"
+        },
+        {
+          "id": "9195b7f3-39ea-4519-a692-1981cc193cae",
+          "title": "Neck Pain"
+        }
+      ]
+    },
+    {
+      "id": "437e8cfa-1fda-4e1e-bffa-53d3f09e509e",
+      "dateTime": "1613423681",
+      "tags": [
+        {
+          "id": "19cce942-d33d-4ddc-a64d-691bd56b9548",
+          "title": "Back Pain"
+        },
+        {
+          "id": "9195b7f3-39ea-4519-a692-1981cc193cae",
+          "title": "Neck Pain"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "19cce942-d33d-4ddc-a64d-691bd56b9548",
+      "title": "Back Pain",
+      "events": [
+        {
+          "id": "68f5d425-5be5-4b2a-9c26-3fc3986390b6",
+          "dateTime": "1614719681"
+        },
+        {
+          "id": "e9b043bf-7714-4c26-8be2-5bc4b64e01e0",
+          "dateTime": "1614633281"
+        },
+        {
+          "id": "437e8cfa-1fda-4e1e-bffa-53d3f09e509e",
+          "dateTime": "1613423681"
+        }
+      ]
+    },
+    {
+      "id": "9195b7f3-39ea-4519-a692-1981cc193cae",
+      "title": "Neck Pain",
+      "events": [
+        {
+          "id": "68f5d425-5be5-4b2a-9c26-3fc3986390b6",
+          "dateTime": "1614719681"
+        },
+        {
+          "id": "e9b043bf-7714-4c26-8be2-5bc4b64e01e0",
+          "dateTime": "1614633281"
+        },
+        {
+          "id": "437e8cfa-1fda-4e1e-bffa-53d3f09e509e",
+          "dateTime": "1613423681"
+        }
+      ]
+    }
+  ]
+}
