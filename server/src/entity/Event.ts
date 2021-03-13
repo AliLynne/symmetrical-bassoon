@@ -7,7 +7,7 @@ export class Event extends Model {
   @Column()
   dateTime: string;
 
-  @ManyToMany(() => Tag)
+  @ManyToMany(() => Tag, (tag) => tag.events)
   @JoinTable()
   tags: Tag[];
 }

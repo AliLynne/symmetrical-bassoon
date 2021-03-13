@@ -76,13 +76,28 @@ app.post("/events", async (req: Request, res: Response) => {
     const tagsList = [];
     tags.forEach(async (tag) => {
       const foundTag = await Tag.findOneOrFail({ id: tag });
+
       tagsList.push(foundTag);
+      console.log(tagsList);
     });
-    const event = new Event({ tagsList, dateTime });
+    const event = new Event();
+    event.dateTime = dateTime;
+    event.tags = tagsList;
+    // console.log("tagsList: " + tagsList);
     await event.save();
     return res.status(200).json(event);
   } catch (err) {
     console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+// Read all events
+app.get("/events", async (req: Request, res: Response) => {
+  try {
+    const events = await Event.find({ relations: ["tags"] });
+    res.status(200).json(events);
+  } catch (err) {
     res.status(500).json(err);
   }
 });
