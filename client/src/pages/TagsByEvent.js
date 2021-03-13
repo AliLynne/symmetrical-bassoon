@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 
-import jsonData from "../sampleData.json";
-const loadData = () => JSON.parse(JSON.stringify(jsonData));
+import { TagsContext } from "../context/TagsContext";
 
 const TagsByEvent = () => {
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    const loadedEvents = loadData().events;
-    setEvents(loadedEvents);
-  }, []);
+  const { events } = useContext(TagsContext);
   return (
     <ul>
       {events &&

@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import AddTag from "./components/AddTag";
 import AddTagEvent from "./components/AddTagEvent";
 
+import TagsContextProvider from "./context/TagsContext";
+
 import EventsByTag from "./pages/EventsByTag";
 import TagsByEvent from "./pages/TagsByEvent";
 
